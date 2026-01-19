@@ -1,0 +1,87 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to right, #ff758c, #ff7eb3);
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Scrolling text */
+.scroll-text {
+    width: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+    background: rgba(255,255,255,0.3);
+    padding: 10px 0;
+}
+
+.scroll-text span {
+    display: inline-block;
+    font-size: 24px;
+    font-weight: bold;
+    color: #fff;
+    animation: scroll 10s linear infinite;
+}
+
+@keyframes scroll {
+    0% { transform: translateX(100%); }
+    100% { transform: translateX(-100%); }
+}
+
+/* Card */
+.card {
+    background: white;
+    padding: 25px;
+    border-radius: 15px;
+    text-align: center;
+    width: 320px;
+    margin-top: 40px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+}
+.images{
+    margin-top: 30px;
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+.i1{
+     width: 300px ;
+    height: 300px ;
+   
+}
+
+
+    
+
+button {
+    background: #ff4d6d;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #e63950;
+}
+
+#msg {
+    margin-top: 15px;
+    font-weight: bold;
+    color: #ff4d6d;
+}
+.ilu{
+  text-align: justify;
+  color: black;
+  font-size: 30px;
+   display: flex;
+   justify-content: center;
+   margin:15px;
+   max-width: 800px;
+   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
